@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hem Smile-Multispeciality Dental Clinic & Implant Center</title>
+    <link rel="icon" type="image/png" href="./images-icons/logo-icon.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <!-- Google font link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+    <!-- scroll animation Wow animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Primary SEO -->
+    <title>Hem Smile Dental Care | Implant Specialist in Kovilpatti | Best Dental Clinic Near Me</title>
+
+    <meta name="description"
+        content="Hem Smile Dental Care - Leading dental clinic and implant specialist in Kovilpatti. Expert dental treatments including implants, braces, root canal, teeth cleaning. Book appointment today.">
+
+    <meta name="keywords"
+        content="Dental Clinic Kovilpatti, Implant Specialist Kovilpatti, Best Dentist Near Me, Teeth Implant Kovilpatti, Root Canal Treatment, Braces Treatment, Teeth Cleaning, Dental Care Tamil Nadu">
+
+    <meta name="author" content="Hem Smile Dental Care">
+
+    <!-- Geo Targeting -->
+    <meta name="geo.region" content="IN-TN">
+    <meta name="geo.placename" content="Kovilpatti, Tamil Nadu">
+    <meta name="geo.position" content="9.1743;77.8692">
+    <meta name="ICBM" content="9.1743, 77.8692">
+
+    <!-- Open Graph (Facebook / WhatsApp) -->
+    <meta property="og:title" content="Hem Smile Dental Care | Implant Specialist in Kovilpatti">
+    <meta property="og:description"
+        content="Best dental clinic in Kovilpatti for implants, braces, root canal & smile care. Book your appointment today.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://yourdomain.com/images/clinic.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hem Smile Dental Care - Kovilpatti">
+    <meta name="twitter:description"
+        content="Implant specialist and dental clinic in Kovilpatti. Quality dental care near you.">
+    <meta name="twitter:image" content="https://yourdomain.com/images/clinic.jpg">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://yourdomain.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Schema Markup (Local Business SEO) -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Hem Smile Dental Care",
+    "image": "https://yourdomain.com/images/clinic.jpg",
+    "@id": "https://yourdomain.com",
+    "url": "https://yourdomain.com",
+    "telephone": "+91-XXXXXXXXXX",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Your Clinic Address",
+      "addressLocality": "Kovilpatti",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "628501",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 9.1743,
+      "longitude": 77.8692
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "20:00"
+    },
+    "sameAs": [
+      "https://www.facebook.com/yourpage",
+      "https://www.instagram.com/yourpage"
+    ]
+  }
+  </script>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal iframe {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 15px;
+        }
+
+        /* Close Button */
+        .close {
+            position: absolute;
+            top: -10px;
+            right: 30px;
+            font-size: 40px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .modal::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
+
+</head>
+
+<body class="preloader-active" oncontextmenu="">
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="./images/logo(1)_PNG.png" alt="Hem Smile Logo" class="loader-logo">
+            <div class="loader-ring"></div>
+        </div>
+    </div>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <nav class="navbar" id="top-nav">
+                <div class="logo">
+                    <a href="index.html"><img loading="lazy" src="./images/logo(1)_PNG.png" alt=""></a>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html" class="nav-link nav-link-ltr active">Home</a></li>
+                        <li><a href="about.html" class="nav-link nav-link-ltr">About us</a></li>
+                        <li><a href="service.html" class="nav-link nav-link-ltr">Services</a></li>
+                        <li><a href="contact.html" class="nav-link nav-link-ltr">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="book all-button" id="but1">
+                    <button class="but" onclick="ena()">Book Appointment
+                        <div>
+                            <img loading="lazy" src="./images-icons/arrows.png" alt="">
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Menu button for mobile view -->
+
+                <div class="menu">
+                    <button id="menuBtn"><img loading="lazy" src="./images-icons/menu-icon.png"
+                            onclick="openSidebar()"></button>
+                </div>
+            </nav>
+
+            <!-- Nav bar for mobile view -->
+            <div class="m-navbar" id="mob-navbar">
+                <div>
+                    <ul>
+                        <button class="close-btn" onclick="closeSidebar()"><img src="./images-icons/close (2).png"
+                                width="25px">
+                        </button>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><button onclick="ena()">Book an appointment</button></li>
+                    </ul>
+                </div>
+                <div class="m-navbar-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.8447216824234!2d77.87352947314591!3d9.177418686651892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06b34f8d8838e7%3A0xfa08b1c790b8aa74!2sHem%20Smile%20Dental%20Care.%20Multi-speciality%20dental%20clinic%20%26%20lmplant%20center!5e1!3m2!1sen!2sin!4v1771842552178!5m2!1sen!2sin"
+                        style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="m-navbar-social-icons">
+                    <a href="https://wa.me/919600762033"><img src="./images-icons/whatsapp (3).png" alt=""></a>
+                    <a
+                        href="https://www.instagram.com/hemsmiledentalcare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                            src="./images-icons/instagram (2).png" alt=""></a>
+                    <a href="https://www.facebook.com/share/1AfY21VfH6/"><img src="./images-icons/facebook (2).png"
+                            alt=""></a>
+                </div>
+            </div>
+
+            <!-- hero section  -->
+
+            <section class="hero">
+                <div class="title">
+                    <h1 class="animate-me">Be the <span>Reason</span> for Someone's <span>Smile</span></h1>
+                    <!-- <h1 class="interactive-section h1">Secure Your<span> Smile </span> with <h1
+                    class="typewriter interactive-section">
+                    <span id="typing"></span>
+                    <span class="cursor">|</span>
+                </h1>
+            </h1> -->
+                    <!-- <p>Experience advanced, pain-free dental care delivered with precision, compassion, and modern technology.
+            </p> -->
+                    <p>Precision dental implants for natural, lasting smiles with comfort and advanced technology.</p>
+                    <p class="animate-me"><span class="smile">Smile Without Worry</span></p>
+
+                    <div class="make all-button">
+                        <button class="but" onclick="ena()">Schedule an appointment
+                            <div>
+                                <img loading="lazy" src="./images-icons/arrows.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="rating">
+                        <div class="star">
+                            <div style="display: flex; gap: 5px; align-items: center;">
+                                <p>Google Rating <span>5.0</span></p> <img src="./images-icons/verified.png" alt=""
+                                    width="20px">
+                            </div>
+                            <ul>
+                                <li><img loading="lazy"
+                                        src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000"
+                                        alt="">
+                                </li>
+                                <li><img loading="lazy"
+                                        src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000"
+                                        alt="">
+                                </li>
+                                <li><img loading="lazy"
+                                        src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000"
+                                        alt="">
+                                </li>
+                                <li><img loading="lazy"
+                                        src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000"
+                                        alt="">
+                                </li>
+                                <li><img loading="lazy"
+                                        src="https://img.icons8.com/?size=100&id=8ggStxqyboK5&format=png&color=000000"
+                                        alt="">
+                                </li>
+                            </ul>
+                            <p>Based on 95 reviews</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="h-img">
+                    <img loading="lazy" src="./images/hero-img.webp" alt="">
+
+                    <div class="icon2 float"><img loading="lazy" src="./images-icons/dental-implant.png" alt=""></div>
+                    <div class="icon3 float"><img loading="lazy" src="./images-icons/laser-beam.png" alt=""></div>
+
+                    <div class="card">
+                        <img src="./images/dentist-icon.jpg" alt="" class="dentist-icon">
+                        <div>
+                            <h5>Dr.K.Ramiah,BDS,MS(<span>Italy</span>)</h5>
+                            <p>Oral Implantologist</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Opening hours section  -->
+
+            <div class="open">
+                <div class="parent wow animate__animated animate__fadeInUp">
+                    <div class="call">
+                        <img loading="lazy" src="https://html.awaikenthemes.com/dentaire/images/icon-cta-phone.svg"
+                            alt="">
+                        <div>
+                            <h3>Need a dental services?</h3>
+                            <h3>Call on : <span class="num"> +91 96007 62033</span></h3>
+                        </div>
+                    </div>
+                    <div class="hours">
+                        <img loading="lazy" src="https://html.awaikenthemes.com/dentaire/images/icon-cta-time.svg">
+                        <div class="open-tym">
+                            <h3>
+                                Morning :<span> 9:00AM to 1:00PM</span><br>
+                                Evening :<span> 5:00PM to 9:00PM</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="open-but all-button wow animate__animated animate__fadeInUp">
+                    <button class="but" onclick="ena()">Book Appointment
+                        <div>
+                            <img loading="lazy" src="./images-icons/arrows.png" alt="">
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- About us section -->
+
+            <section class="about">
+                <div class="a-img">
+                    <img loading="lazy" src="./images/about-us img-copy.webp" alt="" class="img1">
+                </div>
+                <div class="a-title">
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-duration="0.5s">ABOUT US</p>
+                    <h2 class="animate-me interactive-section" aria-hidden="true"><span> Your Journey</span> to a
+                        Healthier
+                        Smile Begins Here</h2>
+                    <h4 class="p wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">General dentistry and
+                        Oral
+                        Implantologist – HEM SMILE
+                        DENTAL CARE Multispeciality  dental clinic & implant Center ,
+                        kovilpatti (2021 - present)</h4>
+                    <div class="points wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                        <ul>
+                            <li><img loading="lazy" src="./images-icons/blue-tick.png" alt="">Experienced Team</li>
+                            <li><img loading="lazy" src="./images-icons/blue-tick.png" alt="">Comprehensive Services
+                            </li>
+                            <li><img loading="lazy" src="./images-icons/blue-tick.png" alt="">State-of-the-Art
+                                Technology</li>
+                            <li><img loading="lazy" src="./images-icons/blue-tick.png" alt="">Emergency Dental Services
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="o-but all-button wow animate__animated animate__fadeInUp" data-wow-delay="1.5s">
+                        <a href="about.html">
+                            <button class="but">Read more About us
+                                <div>
+                                    <img loading="lazy" src="./images-icons/arrows.png" alt="">
+                                </div>
+                            </button></a>
+                    </div>
+                </div>
+            </section>
+            <!-- Aligners Brand section -->
+
+            <section class="aligners">
+                <h1>Your <span> Smile,</span> Powered by Premium Aligners</h1>
+                <div class="brands">
+                    <div class="aligners-track">
+                        <div class="aligner-grp">
+                            <div>
+                                <img src="./LOGOS/mysmartalign(1).jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./LOGOS/invisalign.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./LOGOS/dentcare(1).jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="aligner-grp dup">
+                            <div>
+                                <img src="./LOGOS/mysmartalign(1).jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./LOGOS/invisalign.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./LOGOS/dentcare(1).jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Service section -->
+            <section class="service">
+                <div class="s-title">
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-duration=".8s">OUR SERVICE</p>
+                    <h1 class="animate-me interactive-section" aria-hidden="true"><span>High Quality</span> Services For
+                        You
+                    </h1>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-duration=".8s"><span>We are committed to
+                            sustainability. eco-friendly initiatives.</span></p>
+                </div>
+                <div class="container">
+                    <div class="cont1">
+                        <img loading="lazy" src="./images-icons/root-canal.png" alt="">
+                        <h3>Root Canal Treatment</h3>
+                        <p>A procedure that removes infection inside the tooth and saves it from extraction.</p>
+                    </div>
+                    <div class="cont1">
+                        <img loading="lazy" src="./images-icons/dental-implant.png" alt="">
+                        <h3>Dental Implants</h3>
+                        <p>A permanent replacement for missing teeth that looks and functions like natural teeth.</p>
+                    </div>
+                    <div class="cont1">
+                        <img loading="lazy" src="./images-icons/happy.png" alt="">
+                        <h3>Smile Designing</h3>
+                        <p>A cosmetic dental treatment that enhances the appearance of your smile.</p>
+                    </div>
+                    <div class="cont1">
+                        <img loading="lazy" src="./images-icons/tooth.png" alt="">
+                        <h3>Kids Dentistry</h3>
+                        <p>Gentle dental care specially designed to protect and maintain children’s oral health.</p>
+                    </div>
+                    <div class="cont1">
+                        <img loading="lazy" src="./images-icons/bridge.png" alt="">
+                        <h3>Dental Bridge</h3>
+                        <p>A fixed restoration is used to replace one or more missing teeth and restore your smile.</p>
+                    </div>
+                    <div class="cont1">
+                        <img loading="lazy" src="./images-icons/denture.png" alt="">
+                        <h3>BPS Denture</h3>
+                        <p>Removable artificial teeth designed to replace missing teeth and restore chewing and
+                            appearance.</p>
+                    </div>
+                    <div class="cont1">
+                        <img loading="lazy" src="./images-icons/tooth-filling.png" alt="">
+                        <h3>Tooth Filling</h3>
+                        <p>A treatment that repairs cavities and restores the strength and shape of a damaged tooth.</p>
+                    </div>
+                    <div class="cont1">
+                        <img loading="lazy" src="./images-icons/braces.png" alt="">
+                        <h3>Orthodontic Treatment</h3>
+                        <p>Treatments like braces or aligners that straighten teeth and correct bite problems.</p>
+                    </div>
+                    <div class="cont1">
+                        <img loading="lazy" src="./images-icons/tooth-extraction.png" alt="">
+                        <h3>Tooth Extraction</h3>
+                        <p>A safe procedure to remove severely damaged or infected teeth when necessary.</p>
+                    </div>
+                    <div class="cont1">
+                        <img loading="lazy" src="./images-icons/x-ray.png" alt="">
+                        <h3>Dental X-ray</h3>
+                        <p>Imaging technology that helps detect hidden dental problems in teeth and jaw.</p>
+                    </div>
+                </div>
+                <div class="s-bottom wow animate__animated animate__fadeInUp" data-wow-duration="0.9s">
+                    <p>We believe in using the latest technology and techniques to ensure the best outcomes for our
+                        patients.
+                    </p>
+
+                    <div class="s-but all-button ">
+                        <a href="service.html">
+                            <button class="but">View All Service
+                                <div>
+                                    <img loading="lazy" src="./images-icons/arrows.png" alt="">
+                                </div>
+                            </button></a>
+                    </div>
+            </section>
+
+
+            <!-- Play video section -->
+            <section class="play-parent">
+                <div class="play">
+                    <div class="p-title">
+                        <!--  <p>VISIT CLINIC</p> -->
+                        <h1 class="animate-me">Multispeciality Dental Care & Implant Center</h1>
+                        <p class="animate-me" aria-hidden="true">Step Inside Our Clinic</p>
+                    </div>
+                    <div class="p-but all-button wow animate__animated animate__fadeInUp" data-wow-duration="0.9s">
+                        <button class="but" onclick="openTour()">Take a Virtual Tour
+                            <div>
+                                <img loading="lazy" src="./images-icons/arrows.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Choose us section -->
+
+            <section class="choose">
+                <div class="c-title">
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s">OUR EXPERTISE IN</p>
+                    <h1 class="animate-me interactive-section" aria-hidden="true"><span>DENTAL </span> IMPLANT</h1>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s"><span>Restoring smiles
+                            with
+                            world-class implant technology and precision care</span></p>
+                </div>
+                <div class="main-cont">
+                    <div class="container-left">
+                        <div class="c-1 wow animate__animated animate__fadeInUp" data-wow-duration=".5s"
+                            data-wow-delay=".4s" id="left-cont-1">
+                            <div>
+                                <h2>5+ Years of Implant Excellence</h2>
+                                <p>Advanced implant care with over five years of proven clinical experience.</p>
+                            </div>
+                            <div><img loading="lazy" src="./images-icons/dentist.png" alt=""></div>
+                        </div>
+                        <div class="c-1 wow animate__animated animate__fadeInUp" data-wow-duration=".5s"
+                            data-wow-delay=".5s" id="left-cont-2">
+                            <div>
+                                <h2>Precision Implant Expertise</h2>
+                                <p>Focused on immediate implants, tissue management, and guided surgical precision.</p>
+                            </div>
+                            <div><img loading="lazy" src="./images-icons/dental-service.png" alt=""></div>
+                        </div>
+                        <div class="c-1 wow animate__animated animate__fadeInUp" data-wow-duration=".5s"
+                            data-wow-delay=".6s" id="left-cont-3">
+                            <div>
+                                <h2>Advanced Digital Implantology</h2>
+                                <p>Expert in CBCT-guided planning and 3D implant placement for precise, long-lasting
+                                    results.
+                                </p>
+                            </div>
+                            <div><img loading="lazy" src="./images-icons/dental-technology.png" alt=""
+                                    style="padding-left: 7px;"></div>
+                        </div>
+                    </div>
+                    <div class="teeth-img">
+                        <img loading="lazy" src="./LOGOS/teeth-removebg-preview.png" alt="">
+                    </div>
+                    <div class="container-right">
+                        <div class="c-2  wow animate__animated animate__fadeInUp" data-wow-duration=".5s"
+                            data-wow-delay=".4s" id="right-cont-1">
+                            <div>
+                                <img loading="lazy" src="./images-icons/records.png" alt="">
+                            </div>
+                            <div>
+                                <h2>Proven Implant Expertise</h2>
+                                <p>Over 330 implants placed, including single and full-arch restorations, with
+                                    personalized
+                                    follow up.</p>
+                            </div>
+                        </div>
+                        <div class="c-2  wow animate__animated animate__fadeInUp" data-wow-duration=".5s"
+                            data-wow-delay=".5s" id="right-cont-2">
+                            <div>
+                                <img loading="lazy" src="./images-icons/dental-implant (1).png" alt="">
+                            </div>
+                            <div>
+                                <h2>All-on-4 & All-on-6 Expertise</h2>
+                                <p>Full-mouth rehabilitation using All-on-4 and All-on-6 implant concepts.</p>
+                            </div>
+                        </div>
+                        <div class="c-2  wow animate__animated animate__fadeInUp" data-wow-duration=".5s"
+                            data-wow-delay=".6s" id="right-cont-3">
+                            <div>
+                                <img loading="lazy" src="./images-icons/implant (2).png" alt="">
+                            </div>
+                            <div>
+                                <h2>Single & Multiple Tooth Implants</h2>
+                                <p>Skilled in single and multiple tooth implant placements in both anterior and
+                                    posterior zones.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Acheivement and counts -->
+            <section class="poster-section" id="stats-section">
+                <div class="poster">
+                    <div class="pos1">
+                        <div class="stats">
+                            <h1 class="counter" data-target="4">0</h1>
+                            <h2>Years of Experience</h2>
+                        </div>
+                        <p>Over five years of specialized expertise in dental implantology</p>
+                    </div>
+                    <div class="pos1">
+                        <div class="stats">
+                            <h1 class="counter" data-target="3500" data-plus="true">0</h1>
+                            <h2>Happy Smiles</h2>
+                        </div>
+                        <p>Delivered 3,500+ confident smiles with expert dental care</p>
+                    </div>
+                    <div class="pos1">
+                        <div class="stats">
+                            <h1 class="counter" data-target="30000">0</h1>
+                            <h2>Consultation</h2>
+                        </div>
+                        <p>Delivered 30k+ consultations, helping patients achieve confident</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Team members section -->
+
+            <section class="team">
+                <div class="t-title">
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-duration="0.5s">OUR TEAM</p>
+                    <h1 class="animate-me interactive-section" aria-hidden="true"><span>Our Friendly</span> Dentists
+                        Team</h1>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-duration="0.5s"><span> A team that cares
+                            for
+                            you</span></p>
+                </div>
+                <div class="t-containers">
+                    <div class="t-1 wow animate__animated animate__fadeInUp" data-wow-delay=".25s">
+                        <div class="team-img">
+                            <img loading="lazy" src="./Team/doc4.png" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Dr.P.N.Gopinath,BDS.,MDS.,PGCOI,</h2>
+                            <p>Orthodontist</p>
+
+                        </div>
+                    </div>
+                    <div class="t-1 wow animate__animated animate__fadeInUp" data-wow-delay=".30s">
+                        <div class="team-img">
+                            <img loading="lazy" src="./Team/doc5.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Dr.N.Prithvi Sankar,BDS.,MDS,</h2>
+                            <p>Oral and Maxillofacial Surgeon</p>
+                        </div>
+                    </div>
+                    <div class="t-1 wow animate__animated animate__fadeInUp" data-wow-delay=".35s" id="t3">
+                        <div class="team-img">
+                            <img loading="lazy" src="./Team/doc1.png" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Dr.S.Gobala Krishnan,BDS.,MDS,</h2>
+                            <p>Oral and Maxillofacial Surgeon</p>
+                        </div>
+                    </div>
+                    <div class="t-1 wow animate__animated animate__fadeInUp" data-wow-delay=".40s" id="t4">
+                        <div class="team-img">
+                            <img loading="lazy" src="./Team/doc3.png" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Dr.V.Nagarajan,BDS.,MDS,</h2>
+                            <p>Endodontist & Esthetic Dentist</p>
+                        </div>
+                    </div>
+                    <div class="t-1 wow animate__animated animate__fadeInUp" data-wow-delay=".45s" id="t5">
+                        <div class="team-img">
+                            <img loading="lazy" src="./Team/doc2.png" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Dr.Divakar Srinivasan,BDS.,MDS,</h2>
+                            <p>Root Canal Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonial section -->
+
+            <section class="test">
+                <div class="test-title">
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-duration=".5s">Testimonial</p>
+                    <h1 class="animate-me interactive-section" aria-hidden="true"><span>What Our</span> Client Say</h1>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-duration=".5s"><span>Smiles restored,
+                            confidence renewed hear it from our patients.</span></p>
+                </div>
+                <div class="carousel-section">
+                    <div class="carousel-track-wrap" id="trackWrap">
+
+                        <!-- Testimonial Slider -->
+
+                        <div class="carousel-track" id="track">
+
+                            <div class="slide card1">
+                                <div class="star-google">
+                                    <ul>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                    </ul>
+                                    <img src="./images-icons/google.png" alt="Google">
+                                </div>
+                                <div>
+                                    <p>I recently visited Hem Smile Dental Care two weeks ago for treatment of cavities
+                                        on both
+                                        the right and left sides of my mouth. The doctor suggested a root canal
+                                        treatment, and I
+                                        decided to go ahead with it.
+                                    </p>
+                                </div>
+                                <div class="test-user">
+                                    <img src="./Testimonial/user1.png" alt="Christopher Cj">
+                                    <div class="test-name">
+                                        <h4>Christopher Cj</h4>
+                                        <p>3 Months ago</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide card2">
+                                <div class="star-google">
+                                    <ul>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                    </ul>
+                                    <img src="./images-icons/google.png" alt="Google">
+                                </div>
+                                <div>
+                                    <p>Exceptional dental treatment with expert care and precision! The doctors made me
+                                        feel
+                                        completely at ease, and the procedure was quick and painless. Truly outstanding
+                                        service
+                                        from start to finish!❤️</p>
+                                </div>
+                                <div class="test-user">
+                                    <img src="./Testimonial/user2.png" alt="Priya Sharma">
+                                    <div class="test-name">
+                                        <h4>Jeevarajan</h4>
+                                        <p>10 Months ago</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide card3">
+                                <div class="star-google">
+                                    <ul>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                    </ul>
+                                    <img src="./images-icons/google.png" alt="Google">
+                                </div>
+                                <div>
+                                    <p>
+                                        I had an excellent experience at Dr. Ramiah’s dental clinic. The clinic is
+                                        clean,
+                                        well-equipped, and the staff are friendly and professional. Dr. Ramiah took the
+                                        time to
+                                        explain the treatment clearly and made sure I was comfortable throughout the
+                                        procedure.
+                                    </p>
+                                </div>
+                                <div class="test-user">
+                                    <img src="./Testimonial/user3.png" alt="Arjun Mehta">
+                                    <div class="test-name">
+                                        <h4>Anugraha Nagaraj</h4>
+                                        <p>6 Months ago</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide card4">
+                                <div class="star-google">
+                                    <ul>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                    </ul>
+                                    <img src="./images-icons/google.png" alt="Google">
+                                </div>
+                                <div>
+                                    <p>Great Experience – Wisdom Teeth Removal
+                                        I had my wisdom tooth removed recently, and everything went really well. The
+                                        doctor(Ramiah), surgeon and staff were very nice and made me feel comfortable.
+                                        For my second teeth removal they used best equipment.
+                                    </p>
+                                </div>
+                                <div class="test-user">
+                                    <img src="./Testimonial/user4.png" alt="Lakshmi Rao">
+                                    <div class="test-name">
+                                        <h4>Vijayalakshmi Prabakaran</h4>
+                                        <p>8 Months ago</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide card5">
+                                <div class="star-google">
+                                    <ul>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                    </ul>
+                                    <img src="./images-icons/google.png" alt="Google">
+                                </div>
+                                <div>
+                                    <p>Friendly approach with smiling face.
+                                        Explaining the cause of the problem in detail
+                                        comfortable feeling
+                                        Reasonable consultation/treatment fees
+                                    </p>
+                                </div>
+                                <div class="test-user">
+                                    <img src="./Testimonial/user5.png" alt="Ravi Kumar">
+                                    <div class="test-name">
+                                        <h4>Murugan Chelliah</h4>
+                                        <p>5 years ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide card6">
+                                <div class="star-google">
+                                    <ul>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                    </ul>
+                                    <img src="./images-icons/google.png" alt="Google">
+                                </div>
+                                <div>
+                                    <p>Dr.K Ramiah was incredibly [kind, patient, knowledgeable], explained everything
+                                        clearly,
+                                        and made sure I felt comfortable throughout the procedure. I also appreciated
+                                        how he
+                                        took the time to answer my questions.
+                                    </p>
+                                </div>
+                                <div class="test-user">
+                                    <img src="./Testimonial/user5.png" alt="Ravi Kumar">
+                                    <div class="test-name">
+                                        <h4>Sujith</h4>
+                                        <p>11 Months ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide card7">
+                                <div class="star-google">
+                                    <ul>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                    </ul>
+                                    <img src="./images-icons/google.png" alt="Google">
+                                </div>
+                                <div>
+                                    <p>I personally recommend this doctor. We came here to close the gap in teeth for my
+                                        son. My
+                                        son got cured well and no more toothache. Doctor and staff are so kind.
+                                    </p>
+                                </div>
+                                <div class="test-user">
+                                    <img src="./Testimonial/user5.png" alt="Ravi Kumar">
+                                    <div class="test-name">
+                                        <h4>Sankar Ayyanar</h4>
+                                        <p>a year ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide card8">
+                                <div class="star-google">
+                                    <ul>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                        <li><img src="./images-icons/star.png" alt="★"></li>
+                                    </ul>
+                                    <img src="./images-icons/google.png" alt="Google">
+                                </div>
+                                <div>
+                                    <p>Budgetful treatment for teeth in kovilpatti
+                                        Clear treatment explanation
+                                    </p>
+                                </div>
+                                <div class="test-user">
+                                    <img src="./Testimonial/user5.png" alt="Ravi Kumar">
+                                    <div class="test-name">
+                                        <h4>Mohammed Ibrahim S</h4>
+                                        <p>a year ago</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- /carousel-track -->
+                    </div><!-- /carousel-track-wrap -->
+
+                    <div class="controls">
+                        <button class="btn" id="prevBtn" aria-label="Previous"><img src="./images-icons/right-arrow.png"
+                                alt="" style="transform: rotate(180deg);"></button>
+                        <div class="dots" id="dots"></div>
+                        <button class="btn" id="nextBtn" aria-label="Next"><img src="./images-icons/right-arrow.png"
+                                alt=""></button>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Brand section -->
+            <section class="collob-brand">
+                <div>
+                    <h1>Trusted <span>Brands</span> We Use for <span>Your Care</span></h1>
+                </div>
+                <div class="brand-grid-parent">
+                    <div class="track">
+                        <div class="group">
+                            <div class="brand-grid">
+                                <img src="./LOGOS/3m.png" alt="">
+                            </div>
+                            <div class="brand-grid">
+                                <img src="./LOGOS/bioline.png" alt="">
+                            </div>
+                            <div class="brand-grid">
+                                <img src="./LOGOS/dentcare(1).jpg" alt="">
+                            </div>
+                            <div class="brand-grid">
+                                <img src="./LOGOS/dio_implant_logo.jpg" alt="">
+                            </div>
+                            <div class="brand-grid">
+                                <img src="./LOGOS/gc.jpg" alt="">
+                            </div>
+                            <div class="brand-grid">
+                                <img src="./LOGOS/invisalign.png" alt="">
+                            </div>
+                            <div class="brand-grid">
+                                <img src="./LOGOS/mysmartalign(1).jpg" alt="">
+                            </div>
+                            <div class="brand-grid">
+                                <img src="./LOGOS/ivoclar.png" alt="">
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="brand-grid">
+                                <img src="./LOGOS/3m.png" alt="">
+                            </div>
+                            <div class="brand-grid">
+                                <img src="./LOGOS/bioline.png" alt="">
+                            </div>
+                            <div class="brand-grid">
+                                <img src="./LOGOS/dentcare(1).jpg" alt="">
+                            </div>
+                            <div class="brand-grid">
+                                <img src="./LOGOS/dio_implant_logo.jpg" alt="">
+                            </div>
+                            <div class="brand-grid">
+                                <img src="./LOGOS/gc.jpg" alt="">
+                            </div>
+                            <div class="brand-grid">
+                                <img src="./LOGOS/invisalign.png" alt="">
+                            </div>
+                            <div class="brand-grid">
+                                <img src="./LOGOS/mysmartalign(1).jpg" alt="">
+                            </div>
+                            <div class="brand-grid">
+                                <img src="./LOGOS/ivoclar.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Map section -->
+
+            <section class="map">
+                <div class="m-link">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.8447216824234!2d77.87352947314591!3d9.177418686651892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06b34f8d8838e7%3A0xfa08b1c790b8aa74!2sHem%20Smile%20Dental%20Care.%20Multi-speciality%20dental%20clinic%20%26%20lmplant%20center!5e1!3m2!1sen!2sin!4v1771842552178!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="m-title">
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-duration=".5s">CONTACT NOW</p>
+                    <h1 class="animate-me interactive-section" aria-hidden="true">Get <span>Professional</span>
+                        Consultation
+                    </h1>
+                    <div class="info-parent">
+                        <div class="m1 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                            <img loading="lazy" src="https://html.awaikenthemes.com/dentaire/images/icon-location.svg"
+                                alt="">
+                            <p>K.E.S Complex(1st Floor), Kadalaiyur Main Rd,<br> John Bosco School Opp
+                                ,Kovilpatti-628501.</p>
+                        </div>
+                        <div class="m1 wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
+                            <img loading="lazy" src="https://html.awaikenthemes.com/dentaire/images/icon-phone.svg"
+                                alt="">
+                            <p>+91 96007 62033</p>
+                        </div>
+                        <div class="m1 wow animate__animated animate__fadeInUp" data-wow-delay=".7s">
+                            <img loading="lazy" src="https://html.awaikenthemes.com/dentaire/images/icon-mail.svg"
+                                alt="">
+                            <p>hemsmiledentalcare@gmail.com</p>
+                        </div>
+                        <div class="m1 wow animate__animated animate__fadeInUp" data-wow-delay=".8s">
+                            <img loading="lazy" src="https://html.awaikenthemes.com/dentaire/images/icon-clock.svg"
+                                alt="">
+                            <p>Morning : 9:00AM to 1:00PM <br>
+                                Evening : 5:00PM to 9:00PM</p>
+                        </div>
+                    </div>
+                    <div class="s-but all-button wow animate__animated animate__fadeInUp" data-wow-delay=".9s">
+                        <button class="but" onclick="ena()">Schedule an appointment
+                            <div>
+                                <img loading="lazy" src="./images-icons/arrows.png" alt="">
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Section -->
+
+            <footer class="footer">
+                <div class="f-parent">
+                    <div class="child-logo">
+                        <img loading="lazy" src="./images/logobg(1).png" alt="">
+                        <p>The goal of our clinic is to provide friendly, caring dentistry and the highest level of general, cosmetic, and specialist dental treatments.</p>
+                        <div class="footer-social-icons">
+                            <a href="https://wa.me/919600762033"><img src="./images-icons/whatsapp (3).png" alt=""></a>
+                            <a
+                                href="https://www.instagram.com/hemsmiledentalcare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                                    src="./images-icons/instagram (2).png" alt=""></a>
+                            <a href="https://www.facebook.com/share/1AfY21VfH6/"><img
+                                    src="./images-icons/facebook (2).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="child-links">
+                        <div class="child-cont">
+                            <div>
+                                <p>Quick Links</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="service.html">Services</a></li>
+                                    <li><a href="contact.html">Book Appointment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="child-cont">
+                            <div>
+                                <p>Others</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="policy.html">Privacy & Policy</a></li>
+                                    <li><a href="terms.html">Terms & Conditions</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="child-cont" id="getin">
+                            <div>
+                                <p>Get in Touch</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="tel:9600762033"><img loading="lazy" src="./images-icons/call.png"
+                                                alt="">+91
+                                            96007 62033</a>
+                                    </li>
+                                    <li><a href="mailto:hemsmiledentalcare@gmail.com"><img loading="lazy"
+                                                src="./images-icons/mail.png" alt="">hemsmiledentalcare@gmail.com</a>
+                                    </li>
+                                    <li><img loading="lazy" src="./images-icons/location.png" alt="">K.E.S. Complex(1st
+                                        Floor),
+                                        Kadalaiyur Main Rd,<br> John Bosco School, Opp., Kovilpatti-628501.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2026 All Rights Reserved.</p>
+                    <a href="https://creativetechfactory.in/home/">
+                        <p>Developed by <span>Creative Tech Factory</span></p>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <a href="#top-nav">
+        <div class="up-arrow">
+            <img loading="lazy" src="./images-icons/arrow-down-sign-to-navigate.png" alt="">
+        </div>
+    </a>
+
+    <!-- POP UP SECTION -->
+    <section class="popup-parent" id="popup-parent-f">
+        <div class="popup popup-box" id="popup">
+            <div class="popup-child2">
+                <img loading="lazy" src="./images-icons/Gemini_Generated_Image_jyhnhhjyhnhhjyhn.png" alt="">
+            </div>
+            <div class="popup-child">
+                <form action="" id="myForm" method="post">
+                    <div class="pop-close">
+                        <h1>Book Your Appointment</h1>
+                        <button onclick="finish()"><img loading="lazy" src="./images-icons/icons8-close-30.png"
+                                width="20px">
+                        </button>
+                    </div>
+                    <div class="input-cont-1">
+                        <p>Your Name</p>
+                        <input type="text" placeholder="Eg:Vasanth" name="name" required>
+                    </div>
+                    <div class="input-cont-1">
+                        <p>Phone no</p>
+                        <input type="tel" placeholder="Eg:98765 43210" name="number" maxlength="10" required>
+                    </div>
+                    <div class="input-cont-1">
+                        <p>Message</p>
+                        <textarea rows="4" placeholder="Eg:Message" name="message"></textarea>
+                    </div>
+                    <div class="input-cont-2">
+                        <p>Appointment date</p>
+                        <input type="date" name="date" required >
+                        <span><img loading="lazy" src="" class="p-icon"></span>
+                    </div>
+                    <div class="pop-button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floting icons -->
+    <div class="float-icon whatsapp">
+        <img loading="lazy" src="./images-icons/whatsapp (3).png" alt="">
+        <a href="https://wa.me/919600762033">
+            <p>WhatsApp now</p>
+        </a>
+    </div>
+    <div class="float-icon mail">
+        <img loading="lazy" src="./images-icons/instagram (2).png" alt="">
+        <a
+            href="https://www.instagram.com/hemsmiledentalcare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <p>Instagram </p>
+        </a>
+    </div>
+    <div class="float-icon phone">
+        <img loading="lazy" src="./images-icons/telephone.png" alt="">
+        <a href="tel:+91 96007 62033">
+            <p>Call now</p>
+        </a>
+    </div>
+    <div id="overlay" onclick="closeSidebar()"></div>
+
+    <div class="cursor2"></div>
+
+    <!-- 360 degree view popup -->
+    <div id="viewer" class="modal" onclick="closeTour()">
+        <span class="close" onclick="closeTour()">&times;</span>
+
+        <!-- <iframe width="100%" height="640" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/7M18Z?logo=1&info=1&fs=1&vr=0&zoom=1&sd=1&thumbs=1"></iframe> -->
+        <iframe src="360.html" frameborder="0"></iframe>
+    </div>
+
+</body>
+
+<!-- CDN for GSAP tools -->
+
+<!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<!-- ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- SplitText -->
+<script src="https://assets.codepen.io/16327/SplitText3-beta.min.js"></script>
+
+<!-- popup gsap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Scroll effect wow.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<!-- ScrollSmoother (smooth scroll plugin) -->
+<script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
+
+
+<script>
+    new WOW().init();
+</script>
+
+<script>
+    function openTour() {
+        document.getElementById("viewer").style.display = "block";
+    }
+
+    function closeTour() {
+        document.getElementById("viewer").style.display = "none";
+    }
+</script>
+<script>
+    // Smooth scroll start
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+    // create the smooth scroller FIRST!
+    let smoother = ScrollSmoother.create({
+        smooth: 2,
+        effects: true,
+        normalizeScroll: true,
+    });
+    // Smooth scroll ends
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="script.js"></script>
+
+</html>

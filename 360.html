@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.pannellum.org/2.5/pannellum.css" />
+    <script src="https://cdn.pannellum.org/2.5/pannellum.js"></script>
+    <style>
+        .custom-hotspot {
+            width: 25px;
+            height: 25px;
+            background: url('./images-icons/logo-icon.png') no-repeat center;
+            background-size: 20px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="viewer" style="width:100%; height:100vh; border-radius: 10px;"></div>
+
+    <script>
+        pannellum.viewer('viewer', {
+            "default": {
+                "firstScene": "entrance",
+                "autoLoad": true,
+                "sceneFadeDuration": 1000,
+
+
+            },
+
+            "scenes": {
+
+                "entrance": {
+                    "title": "Entrance",
+                    "type": "equirectangular",
+                    "panorama": "360images/Entrance.webp",
+                    "yaw": 180,
+                    "hotSpots": [
+                        {
+                            "pitch": 0,
+                            "yaw": 180,
+                            "type": "scene",
+                            "text": "Go to reception",
+                            "sceneId": "reception",
+                            "cssClass": "custom-hotspot"
+
+
+                        }
+                    ]
+                },
+
+                "reception": {
+                    "title": "Reception",
+                    "type": "equirectangular",
+                    "panorama": "360images/Reception.webp",
+                    "yaw": 180,
+                    "hotSpots": [
+                        {
+                            "pitch": 3,
+                            "yaw": 40,
+                            "type": "scene",
+                            "text": "Consultation Room",
+                            "sceneId": "cabin",
+                            "cssClass": "custom-hotspot"
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw": 5,
+                            "type": "scene",
+                            "text": "Entrance",
+                            "sceneId": "entrance",
+                            "cssClass": "custom-hotspot"
+                        }
+                    ]
+                },
+
+                "cabin": {
+                    "title": "Dr's Cabin",
+                    "type": "equirectangular",
+                    "panorama": "360images/dr's cabin.webp",
+                    "hotSpots": [
+                        {
+                            "pitch": 0,
+                            "yaw": 145,
+                            "type": "scene",
+                            "text": "Go to Workspace",
+                            "sceneId": "workplace1",
+                            "cssClass": "custom-hotspot"
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw": -100,
+                            "type": "scene",
+                            "text": "Back to Reception",
+                            "sceneId": "reception",
+                            "cssClass": "custom-hotspot"
+                        }
+                    ]
+                },
+
+                "workplace1": {
+                    "title": "Workspace 1",
+                    "type": "equirectangular",
+                    "panorama": "360images/workingplace.webp",
+                    "hotSpots": [
+                        {
+                            "pitch": 0,
+                            "yaw": 120,
+                            "type": "scene",
+                            "text": "Workspace 2",
+                            "sceneId": "workplace2",
+                            "cssClass": "custom-hotspot"
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw": -70,
+                            "type": "scene",
+                            "text": "Dr's Cabin",
+                            "sceneId": "cabin",
+                            "cssClass": "custom-hotspot"
+                        }
+                    ]
+                },
+                "workplace2": {
+                    "title": "Workspace 2",
+                    "type": "equirectangular",
+                    "panorama": "360images/workingplace2.webp",
+                    "yaw": -40,
+                    "hotSpots": [
+                        {
+                            "pitch": 0,
+                            "yaw": 80,
+                            "type": "scene",
+                            "text": "Back to Workspace",
+                            "sceneId": "workplace1",
+                            "cssClass": "custom-hotspot"
+                        }
+                    ]
+                }
+
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="icon" type="image/png" href="./images-icons/logo-icon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <!-- Google font link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- scroll animation Wow animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+        <div id="smooth-wrapper">
+        <div id="smooth-content">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img loading="lazy" src="./images/logo(1)_PNG.png" alt=""></a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html" class="nav-link nav-link-ltr">Home</a></li>
+                <li><a href="about.html" class="nav-link nav-link-ltr">About us</a></li>
+                <li><a href="service.html" class="nav-link nav-link-ltr active">Services</a></li>
+                <li><a href="contact.html" class="nav-link nav-link-ltr">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="book all-button">
+            <button class="but" onclick="ena()">Book Appointment
+                <div>
+                    <img loading="lazy" src="./images-icons/arrows.png
+                    " alt="">
+                </div>
+            </button>
+        </div>
+
+        <!-- Menu button for mobile view -->
+
+        <div class="menu">
+            <button id="menuBtn"><img loading="lazy" src="./images-icons/menu-icon.png" alt="menu-icon"
+                    onclick="openSidebar()"></button>
+        </div>
+    </nav>
+
+    <!-- Nav bar for mobile view -->
+    <div class="m-navbar" id="mob-navbar">
+        <div>
+            <ul>
+                <button class="close-btn" onclick="closeSidebar()"><img src="./images-icons/close (2).png" width="25px">
+                </button>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><button onclick="ena()">Book an appointment</button></li>
+            </ul>
+        </div>
+        <div class="m-navbar-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.8447216824234!2d77.87352947314591!3d9.177418686651892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06b34f8d8838e7%3A0xfa08b1c790b8aa74!2sHem%20Smile%20Dental%20Care.%20Multi-speciality%20dental%20clinic%20%26%20lmplant%20center!5e1!3m2!1sen!2sin!4v1771842552178!5m2!1sen!2sin"
+                style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="m-navbar-social-icons">
+            <a href="https://wa.me/919600762033"><img src="./images-icons/whatsapp (3).png" alt=""></a>
+            <a
+                href="https://www.instagram.com/hemsmiledentalcare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                    src="./images-icons/instagram (2).png" alt=""></a>
+            <a href="https://www.facebook.com/share/1AfY21VfH6/"><img src="./images-icons/facebook (2).png" alt=""></a>
+        </div>
+    </div>
+
+    <!-- Service Section -->
+
+    <div class="contact">
+        <div class="contact-title">
+            <h1>Our <span>Services</span></h1>
+            <p><a href="index.html">Home / </a><a href="service.html">Our services</a></p>
+        </div>
+    </div>
+
+    <!-- Service Section -->
+
+    <section class="service-ind">
+        <div class="section-child-2">
+            <div class="s-heading">
+                <h1 class="animate-me">All Your <span>Dental</span> Needs Under <span>One </span>Roof</h1>
+            </div>
+            <div class="grid-parent-s">
+                <div class="img-grid">
+                    <img src="./service-images/full-dental.jpg" alt="">
+                    <p>Full Mouth Implant Rehabilitation</p>
+                </div>
+                <div class="img-grid">
+                    <img src="./service-images/bridge.jpg" alt="">
+                    <p>Dental Bridge</p>
+                </div>
+                <div class="img-grid">
+                    <img src="./service-images/denture (2).jpg" alt="">
+                    <p>BPS Denture</p>
+                </div>
+                <div class="img-grid">
+                    <img src="./service-images/3857668_109.jpg" alt="">
+                    <p>Filling & Restoration</p>
+                </div>
+                <div class="img-grid">
+                    <img src="./service-images/gum.jpg" alt="">
+                    <p>Gum Disease - Treatments</p>
+                </div>
+                <div class="img-grid">
+                    <img src="./service-images/implant.jpg" alt="">
+                    <p>Dental Implant</p>
+                </div>
+                <div class="img-grid">
+                    <img src="./service-images/kids-dent.jpg" alt="">
+                    <p>Kids Dentistry</p>
+                </div>
+                <div class="img-grid">
+                    <img src="./service-images/bracis.jpg" alt="">
+                    <p>Orthodontic  Treatments</p>
+                </div>
+                <div class="img-grid">
+                    <img src="./service-images/385.jpg" alt="">
+                    <p>Smile Designing</p>
+                </div>
+                <div class="img-grid">
+                    <img src="./service-images/extraction.jpg" alt="">
+                    <p>Painless Tooth Extraction</p>
+                </div>
+                <div class="img-grid">
+                    <img src="./service-images/x-ray.jpg" alt="">
+                    <p>Dental X-ray</p>
+                </div>
+                <div class="img-grid">
+                    <img src="./service-images/invisble aligners.jpeg" alt="">
+                    <p>Invisible Aligners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+            <footer class="footer">
+                <div class="f-parent">
+                    <div class="child-logo">
+                        <img loading="lazy" src="./images/logobg(1).png" alt="">
+                        <p>The goal of our clinic is to provide friendly, caring dentistry and the highest level of general, cosmetic, and specialist dental treatments.</p>
+                        <div class="footer-social-icons">
+                            <a href="https://wa.me/919600762033"><img src="./images-icons/whatsapp (3).png" alt=""></a>
+                            <a
+                                href="https://www.instagram.com/hemsmiledentalcare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                                    src="./images-icons/instagram (2).png" alt=""></a>
+                            <a href="https://www.facebook.com/share/1AfY21VfH6/"><img
+                                    src="./images-icons/facebook (2).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="child-links">
+                        <div class="child-cont">
+                            <div>
+                                <p>Quick Links</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="service.html">Services</a></li>
+                                    <li><a href="contact.html">Book Appointment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="child-cont">
+                            <div>
+                                <p>Others</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="policy.html">Privacy & Policy</a></li>
+                                    <li><a href="terms.html">Terms & Conditions</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="child-cont" id="getin">
+                            <div>
+                                <p>Get in Touch</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="tel:9600762033"><img loading="lazy" src="./images-icons/call.png"
+                                                alt="">+91
+                                            96007 62033</a>
+                                    </li>
+                                    <li><a href="mailto:hemsmiledentalcare@gmail.com"><img loading="lazy"
+                                                src="./images-icons/mail.png" alt="">hemsmiledentalcare@gmail.com</a>
+                                    </li>
+                                    <li><img loading="lazy" src="./images-icons/location.png" alt="">K.E.S. Complex (1st
+                                        Floor),
+                                        Kadalaiyur Main Rd,<br> John Bosco School, Opp., Kovilpatti-628501.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2026 All Rights Reserved.</p>
+                    <a href="https://creativetechfactory.in/home/">
+                        <p>Developed by <span>Creative Tech Factory</span></p>
+                    </a>
+                </div>
+            </footer>
+</div>
+</div>
+    <!-- POP UP SECTION -->
+    <section class="popup-parent" id="popup-parent-f">
+        <div class="popup popup-box" id="popup">
+            <div class="popup-child2">
+                <img loading="lazy" src="./images-icons/Gemini_Generated_Image_jyhnhhjyhnhhjyhn.png" alt="">
+            </div>
+            <div class="popup-child">
+                <form action="" id="myForm" method="post">
+                    <div class="pop-close">
+                        <h1>Book Your Appointment</h1>
+                        <button onclick="finish()"><img loading="lazy" src="./images-icons/icons8-close-30.png"
+                                width="20px">
+                        </button>
+                    </div>
+                    <div class="input-cont-1">
+                        <p>Your Name</p>
+                        <input type="text" placeholder="Eg:Vasanth" name="name" required>
+                    </div>
+                    <div class="input-cont-1">
+                        <p>Phone no</p>
+                        <input type="tel" placeholder="Eg:98765 43210" name="number" maxlength="10" required>
+                    </div>
+                    <div class="input-cont-1">
+                        <p>Message</p>
+                        <textarea rows="4" placeholder="Eg:Message" name="message"></textarea>
+                    </div>
+                    <div class="input-cont-2">
+                        <p>Appointment date</p>
+                        <input type="date" name="date" required>
+                        <span><img loading="lazy" src="" class="p-icon"></span>
+                    </div>
+                    <div class="pop-button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="cursor2"></div>
+</body>
+
+<!-- CDN for GSAP tools -->
+
+<!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<!-- ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- SplitText -->
+<script src="https://assets.codepen.io/16327/SplitText3-beta.min.js"></script>
+
+<!-- popup gsap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Scroll effect wow.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<!-- ScrollSmoother (smooth scroll plugin) -->
+<script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
+
+<script>
+    new WOW().init();
+</script>
+<script>
+    // Smooth scroll start
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+    // create the smooth scroller FIRST!
+    let smoother = ScrollSmoother.create({
+        smooth: 2,
+        effects: true,
+        normalizeScroll: true,
+    });
+    // Smooth scroll ends
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions</title>
+    <link rel="icon" type="image/png" href="./images-icons/logo-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <!-- Google font link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- bootstrap link -->
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+
+    <!-- scroll animation -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+</head>
+
+<body>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img loading="lazy" src="./images/logo(1)_PNG.png" alt=""></a>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html" class="nav-link nav-link-ltr">Home</a></li>
+                        <li><a href="about.html" class="nav-link nav-link-ltr">About us</a></li>
+                        <li><a href="service.html" class="nav-link nav-link-ltr">Services</a></li>
+                        <li><a href="contact.html" class="nav-link nav-link-ltr">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="book all-button">
+                    <button class="but" onclick="ena()">Book Appointment
+                        <div>
+                            <img loading="lazy" src="./images-icons/arrows.png" alt="">
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Menu button for mobile view -->
+
+                <div class="menu">
+                    <button id="menuBtn"><img loading="lazy" src="./images-icons/menu-icon.png"
+                            onclick="openSidebar()"></button>
+                </div>
+            </nav>
+
+            <!-- Nav bar for mobile view -->
+            <div class="m-navbar" id="mob-navbar">
+                <div>
+                    <ul>
+                        <button class="close-btn" onclick="closeSidebar()"><img src="./images-icons/close (2).png"
+                                width="25px">
+                        </button>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><button onclick="ena()">Book an appointment</button></li>
+                    </ul>
+                </div>
+                <div class="m-navbar-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.8447216824234!2d77.87352947314591!3d9.177418686651892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06b34f8d8838e7%3A0xfa08b1c790b8aa74!2sHem%20Smile%20Dental%20Care.%20Multi-speciality%20dental%20clinic%20%26%20lmplant%20center!5e1!3m2!1sen!2sin!4v1771842552178!5m2!1sen!2sin"
+                        style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="m-navbar-social-icons">
+                    <a href="https://wa.me/919600762033"><img src="./images-icons/whatsapp (3).png" alt=""></a>
+                    <a
+                        href="https://www.instagram.com/hemsmiledentalcare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                            src="./images-icons/instagram (2).png" alt=""></a>
+                    <a href="https://www.facebook.com/share/1AfY21VfH6/"><img src="./images-icons/facebook (2).png"
+                            alt=""></a>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+
+            <div class="contact">
+                <div class="contact-title">
+                    <h1><span>Terms &</span> Conditions</h1>
+                    <p><a href="index.html" style="font: size 14px;opacity: 0.5;">Home</a></p>
+                </div>
+            </div>
+
+
+            <section class="terms">
+                <div class="term-content">
+                    <div class="term-para">
+                        <h1 id="one">1.Introduction</h1>
+                        <p>These Terms and Conditions govern the provision of dental healthcare services by The hospital
+                            is
+                            committed to delivering ethical, professional, and patient-centered dental care in
+                            accordance with
+                            accepted clinical standards and applicable laws.</p>
+
+                        <p>By visiting the hospital, registering as a patient, or receiving treatment, patients
+                            acknowledge that
+                            they understand the nature of dental services and agree to comply with these Terms. These
+                            Terms
+                            apply to all patients, attendants, guardians, and visitors within the hospital premises.</p>
+                    </div>
+                    <div class="term-para">
+                        <h1 id="two">2. Acceptance of Terms</h1>
+                        <p>Acceptance of these Terms is a mandatory condition for receiving any consultation, diagnostic
+                            service, or dental treatment at the hospital. Patients who proceed with appointments or
+                            treatment
+                            are deemed to have voluntarily accepted these Terms in full.</p>
+                        <p>If a patient does not agree with any part of these Terms, they have the right to decline
+                            treatment.
+                            Continued use of hospital services after updates or modifications to these Terms constitutes
+                            acceptance of the revised Terms.</p>
+                    </div>
+                    <div class="term-para">
+                        <h1 id="three">3. Scope of Dental Services</h1>
+                        <p>The hospital provides a wide range of dental services including preventive care, diagnosis,
+                            restorative treatments, oral surgery, orthodontics, prosthodontics, and cosmetic dentistry.
+                            All
+                            services are offered based on clinical evaluation, professional judgment, and patient
+                            cooperation.
+                        </p>
+                        <p>The hospital reserves the right to modify, limit, or discontinue any service when medically
+                            necessary
+                            or due to operational constraints. Treatment decisions are made solely in the best interest
+                            of
+                            patient health and safety.</p>
+                    </div>
+                    <div class="term-para">
+                        <h1 id="four">4. Appointments & Treatment Scheduling</h1>
+                        <p>Appointments are scheduled based on availability and clinical priority. While the hospital
+                            strives to
+                            adhere to scheduled appointment times, delays may occur due to emergency cases, complex
+                            procedures,
+                            or unforeseen circumstances beyond the hospital’s control.</p>
+                        <p>Patients are advised to arrive on time and cooperate during the consultation process. The
+                            hospital
+                            does not guarantee exact treatment durations or waiting times and shall not be held
+                            responsible for
+                            scheduling delays.</p>
+                    </div>
+                    <div class="term-para">
+                        <h1 id="five">5. Patient Rights & Responsibilities</h1>
+                        <p>Patients have the right to receive respectful, dignified, and non-discriminatory care. They
+                            are
+                            entitled to clear explanations regarding diagnosis, treatment options, associated risks,
+                            expected
+                            outcomes, and estimated costs before treatment begins.</p>
+                        <p>Patients are also responsible for providing accurate personal and medical information,
+                            following
+                            prescribed treatment and post-procedure instructions, and maintaining respectful behavior
+                            toward
+                            hospital staff and other patients.</p>
+                    </div>
+                    <div class="term-para">
+                        <h1 id="six">6. Medical History Disclosure & Consent</h1>
+                        <p>Patients must fully disclose their medical history, including systemic illnesses, allergies,
+                            medications, pregnancy status, and prior dental treatments. Accurate disclosure is essential
+                            for
+                            safe and effective dental care.</p>
+                        <p>Informed consent is obtained before any procedure. Consent may be written, verbal, or
+                            digital, and
+                            emergency situations may require immediate treatment without prior written consent to
+                            protect
+                            patient health.</p>
+                    </div>
+                    <div class="term-para">
+                        <h1 id="seven">7. Diagnosis, Treatment Planning & Outcomes</h1>
+                        <p>Diagnosis and treatment planning are based on clinical examination, diagnostic
+                            investigations, and
+                            patient cooperation. Treatment plans and cost estimates are provisional and may change if
+                            additional
+                            conditions are identified during treatment.</p>
+                        <p>Dental treatment outcomes vary depending on biological factors, oral hygiene, and patient
+                            compliance.
+                            The hospital does not guarantee permanent results or aesthetic perfection, and patients
+                            acknowledge
+                            these inherent limitations.</p>
+                    </div>
+                    <div class="term-para">
+                        <h1 id="eight">8. Payments, Billing & Insurance </h1>
+                        <p>All treatment charges must be paid as per the agreed treatment plan and hospital billing
+                            policies.
+                            Fees may vary if treatment requirements change during the course of care.</p>
+                        <p>Insurance claims and third-party payments are subject to insurer approval. The hospital does
+                            not
+                            guarantee claim settlement, and patients remain responsible for any charges not covered by
+                            insurance.</p>
+                    </div>
+                    <div class="term-para">
+                        <h1 id="nine">9. Cancellations, Refunds & No-Show Policy</h1>
+                        <p>Patients are required to inform the hospital at least twenty-four hours in advance for
+                            appointment
+                            cancellations. Failure to attend appointments without prior notice may result in
+                            cancellation fees.
+                        </p>
+                        <p>Refunds are not applicable for completed procedures or services already rendered. Any
+                            eligible
+                            refunds will be processed in accordance with hospital policy and within a reasonable
+                            timeframe.</p>
+                    </div>
+                    <div class="term-para">
+                        <h1 id="ten">10. Medical Records, Privacy & Data Protection</h1>
+                        <p>The hospital maintains patient medical records in a confidential and secure manner, in
+                            compliance
+                            with applicable data protection and healthcare laws. Patient information is used solely for
+                            treatment, documentation, and legal purposes.</p>
+                        <p>Medical records may be disclosed only with patient consent or when required by law. Patients
+                            may
+                            request access to their records subject to hospital policy and legal guidelines.</p>
+                    </div>
+                    <div class="term-para">
+                        <h1 id="eleven">11. Limitation of Liability & Safety Measures</h1>
+                        <p>The hospital follows strict sterilization, infection control, and safety protocols to ensure
+                            patient
+                            well-being. Patients are required to comply with all safety instructions while on hospital
+                            premises.
+                        </p>
+                        <p>The hospital shall not be liable for complications arising from undisclosed medical
+                            conditions,
+                            patient negligence, non-compliance with instructions, or unpredictable biological responses
+                            to
+                            treatment.</p>
+                    </div>
+                    <div class="term-para">
+                        <h1 id="twelve">12. Governing Law, Amendments & Contact Information</h1>
+                        <p>These Terms and Conditions shall be governed by and interpreted in accordance with the laws
+                            of India,
+                            and any disputes shall be subject to the jurisdiction of courts located in Kovilpatti.</p>
+                        <p>The hospital reserves the right to amend these Terms at any time without prior notice. For
+                            queries or
+                            concerns, patients may contact Hem Smile-Multispeciality dental care & Implant Center at +91
+                            96007 62033 or hemsmiledentalcare@gmail.com .</p>
+                    </div>
+                </div>
+                <div class="fix-parent">
+                    <section class="table-fix">
+                        <h1>TABLE OF CONTENT</h1>
+                        <ul>
+                            <li><a href="#one">Introduction</a></li>
+                            <li><a href="#two">Acceptance of Terms</a></li>
+                            <li><a href="#three">Scope of Dental Services</a></li>
+                            <li><a href="#four">Appointments & Treatment Scheduling</a></li>
+                            <li><a href="#five">Patient Rights & Responsibilities</a></li>
+                            <li><a href="#six">Medical History Disclosure & Consent</a></li>
+                            <li><a href="#seven">Diagnosis, Treatment Planning & Outcomes</a></li>
+                            <li><a href="#eight">Payments, Billing & Insurance</a></li>
+                            <li><a href="#nine">Cancellations, Refunds & No-Show Policy</a></li>
+                            <li><a href="#ten">Medical Records, Privacy & Data Protection</a></li>
+                            <li><a href="#eleven">Limitation of Liability & Safety Measures</a></li>
+                            <li><a href="#twelve">Governing Law, Amendments & Contact Information</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+
+            <!-- Footer Section -->
+
+            <footer class="footer">
+                <div class="f-parent">
+                    <div class="child-logo">
+                        <img loading="lazy" src="./images/logobg(1).png" alt="">
+                        <p>The goal of our clinic is to provide friendly, caring dentistry and the highest level of general, cosmetic, and specialist dental treatments.</p>
+                        <div class="footer-social-icons">
+                            <a href="https://wa.me/919600762033"><img src="./images-icons/whatsapp (3).png" alt=""></a>
+                            <a
+                                href="https://www.instagram.com/hemsmiledentalcare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                                    src="./images-icons/instagram (2).png" alt=""></a>
+                            <a href="https://www.facebook.com/share/1AfY21VfH6/"><img
+                                    src="./images-icons/facebook (2).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="child-links">
+                        <div class="child-cont">
+                            <div>
+                                <p>Quick Links</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="service.html">Services</a></li>
+                                    <li><a href="contact.html">Book Appointment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="child-cont">
+                            <div>
+                                <p>Others</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="policy.html">Privacy & Policy</a></li>
+                                    <li><a href="terms.html">Terms & Conditions</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="child-cont" id="getin">
+                            <div>
+                                <p>Get in Touch</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="tel:9600762033"><img loading="lazy" src="./images-icons/call.png"
+                                                alt="">+91
+                                            96007 62033</a>
+                                    </li>
+                                    <li><a href="mailto:hemsmiledentalcare@gmail.com"><img loading="lazy"
+                                                src="./images-icons/mail.png" alt="">hemsmiledentalcare@gmail.com</a>
+                                    </li>
+                                    <li><img loading="lazy" src="./images-icons/location.png" alt="">K.E.S. Complex(1st
+                                        Floor),
+                                        Kadalaiyur Main Rd,<br> John Bosco School, Opp., Kovilpatti-628501.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2026 All Rights Reserved.</p>
+                    <a href="https://creativetechfactory.in/home/">
+                        <p>Developed by <span>Creative Tech Factory</span></p>
+                    </a>
+                </div>
+            </footer>
+    <!-- POP UP SECTION -->
+    <section class="popup-parent" id="popup-parent-f">
+        <div class="popup popup-box" id="popup">
+            <div class="popup-child2">
+                <img loading="lazy" src="./images-icons/Gemini_Generated_Image_jyhnhhjyhnhhjyhn.png" alt="">
+            </div>
+            <div class="popup-child">
+                <form action="" id="myForm" method="post">
+                    <div class="pop-close">
+                        <h1>Book Your Appointment</h1>
+                        <button onclick="finish()"><img loading="lazy" src="./images-icons/icons8-close-30.png"
+                                width="20px">
+                        </button>
+                    </div>
+                    <div class="input-cont-1">
+                        <p>Your Name</p>
+                        <input type="text" placeholder="Eg:Vasanth" name="name" required>
+                    </div>
+                    <div class="input-cont-1">
+                        <p>Phone no</p>
+                        <input type="tel" placeholder="Eg:98765 43210" name="number" maxlength="10" required>
+                    </div>
+                    <div class="input-cont-1">
+                        <p>Message</p>
+                        <textarea rows="4" placeholder="Eg:Message" name="message"></textarea>
+                    </div>
+                    <div class="input-cont-2">
+                        <p>Appointment date</p>
+                        <input type="date" name="date" required>
+                        <span><img loading="lazy" src="" class="p-icon"></span>
+                    </div>
+                    <div class="pop-button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="cursor2"></div>
+</body>
+
+<!-- CDN for GSAP tools -->
+
+<!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<!-- ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- SplitText -->
+<script src="https://assets.codepen.io/16327/SplitText3-beta.min.js"></script>
+
+<!-- popup gsap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Scroll effect wow.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<!-- ScrollSmoother (smooth scroll plugin) -->
+<script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+
+</html>

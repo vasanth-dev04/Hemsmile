@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" type="image/png" href="./images-icons/logo-icon.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+
+    <!-- Google font link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- scroll animation Wow animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img loading="lazy" src="./images/logo(1)_PNG.png" alt="logo"></a>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li class=""><a href="index.html" class="nav-link nav-link-ltr ">Home</a></li>
+                        <li><a href="about.html" class="nav-link nav-link-ltr active">About us</a></li>
+                        <li><a href="service.html" class="nav-link nav-link-ltr">Services</a></li>
+                        <li><a href="contact.html" class="nav-link nav-link-ltr">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="book all-button" id="but1">
+                    <button class="but" onclick="ena()">Book Appointment
+                        <div>
+                            <img loading="lazy" src="./images-icons/arrows.png" alt="arrow-mark">
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Menu button for mobile view -->
+
+                <div class="menu">
+                    <button id="menuBtn"><img loading="lazy" src="./images-icons/menu-icon.png" alt="menu-icon"
+                            onclick="openSidebar()"></button>
+                </div>
+            </nav>
+
+            <!-- Nav bar for mobile view -->
+            <div class="m-navbar" id="mob-navbar">
+                <div>
+                    <ul>
+                        <button class="close-btn" onclick="closeSidebar()"><img src="./images-icons/close (2).png"
+                                width="25px">
+                        </button>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><button onclick="ena()">Book an appointment</button></li>
+                    </ul>
+                </div>
+                <div class="m-navbar-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.8447216824234!2d77.87352947314591!3d9.177418686651892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06b34f8d8838e7%3A0xfa08b1c790b8aa74!2sHem%20Smile%20Dental%20Care.%20Multi-speciality%20dental%20clinic%20%26%20lmplant%20center!5e1!3m2!1sen!2sin!4v1771842552178!5m2!1sen!2sin"
+                        style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="m-navbar-social-icons">
+                    <a href="https://wa.me/919600762033"><img src="./images-icons/whatsapp (3).png" alt=""></a>
+                    <a
+                        href="https://www.instagram.com/hemsmiledentalcare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                            src="./images-icons/instagram (2).png" alt=""></a>
+                    <a href="https://www.facebook.com/share/1AfY21VfH6/"><img src="./images-icons/facebook (2).png"
+                            alt=""></a>
+                </div>
+            </div>
+
+            <!-- Heading section -->
+
+            <div class="contact">
+                <div class="contact-title">
+                    <h1><span>About</span> Us</h1>
+                    <p><a href="index.html">Home / </a><a href="about.html">About us</a></p>
+                </div>
+            </div>
+
+            <!-- about us section start -->
+
+            <section class="about-main" class="stats-section">
+                <div class="about-child-1">
+                    <img loading="lazy" src="./images/CTF06477.webp" alt="Team-Members">
+                </div>
+                <div class="about-child-2">
+                    <p class="wow animate__animated animate__fadeInUp">Crafting Confident Smiles with Expertise </p>
+                    <h1 class="animate-me">Focused on delivering <span> reliable, comfortable, and
+                            results-driven</span>dental
+                        solutions</h1>
+                    <div class="grid-parent">
+                        <div class="about-container">
+                            <div class="a-cont-child" class="stats">
+                                <h1 class="counter" data-target="30000">0</h1>
+                                <p>Consultation</p>
+                            </div>
+                            <div class="a-cont-child" class="stats">
+                                <h1 class="counter" data-target="3000">0</h1>
+                                <p>Happy smiles
+                            </div>
+                            <div class="a-cont-child" class="stats">
+                                <h1 class="counter" data-target="4">0</h1>
+                                <p>Years of Experience</p>
+                            </div>
+                            <div class="a-cont-child" class="stats">
+                                <h1 class="counter" data-target="2">0</h1>
+                                <p>Dental Chairs (1st in our city)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="details-parent">
+                <section class="details-sub">
+                    <div class="about-details">
+                        <h1>Transforming Smiles Since 2021</h1>
+                        <p><span class="start">W</span>e started our journey in <span>2021</span> with a single dental
+                            chair and
+                            a strong commitment to providing
+                            quality dental care. With over <span>5 years of professional experience,</span> our practice
+                            has
+                            grown steadily
+                            and now operates with <span>three fully equipped dental chairs</span> to serve our patients
+                            better.
+                            Having
+                            completed an <span>MS in Italy,</span> we bring advanced knowledge and global expertise to
+                            our
+                            treatments, with a
+                            special focus on <span>implantology.</span> Over the years, we have successfully handled
+                            more than
+                            30,000
+                            consultations and built a community of over <span>3,000 happy clients,</span> reflecting our
+                            dedication to
+                            excellence, precision, and patient <span>satisfaction.</span></p>
+
+                    </div>
+                    <div class="about-details-img">
+                        <img loading="lazy" src="./images/CTF07215_ (1).webp" alt="">
+                    </div>
+                </section>
+            </section>
+
+            <!-- Works Section -->
+            <section class="works-section">
+                <div class="works-container">
+                    <div class="works-heading">
+                        <h1 class="animate-me">Transformations <span>We’ve</span> Crafted</h1>
+                        <p class="wow animate__animated animate__fadeInUp">A glimpse of our successful treatments and
+                            happy
+                            smiles at Hem Smile Dental Care.</p>
+                        <div class="works-title">
+                            <h1 class="wow animate__animated animate__fadeInUp"><span>Smile</span> Transformations</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-wrapper">
+                        <button class="carousel-btn " id="prevBtn">&lt;</button>
+                        <div class="carousel-viewport" id="carouselViewport1">
+                            <div class="carousel-track" id="carouselTrack">
+                                <div class="carousel-slide"><img src="./service-images/works/smile/smile1.webp"
+                                        alt="Work 1"></div>
+                                <div class="carousel-slide"><img src="./service-images/works/smile/smile2.webp"
+                                        alt="Work 2"></div>
+                                <div class="carousel-slide"><img src="./service-images/works/smile/smile3.webp"
+                                        alt="Work 3"></div>
+                                <div class="carousel-slide"><img src="./service-images/works/smile/smile4.webp"
+                                        alt="Work 4"></div>
+                                <div class="carousel-slide"><img src="./service-images/works/smile/smile5.webp"
+                                        alt="Work 5"></div>
+                                <div class="carousel-slide"><img src="./service-images/works/smile/smile6.webp"
+                                        alt="Work 6"></div>
+                                <div class="carousel-slide"><img src="./service-images/works/smile/smile7.webp"
+                                        alt="Work 7"></div>
+                                <div class="carousel-slide"><img src="./service-images/works/smile/smile8.webp"
+                                        alt="Work 8"></div>
+                                <div class="carousel-slide"><img src="./service-images/works/smile/smile9.webp"
+                                        alt="Work 9"></div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn" id="nextBtn">&gt;</button>
+                    </div>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                </div>
+
+            </section>
+            <section class="works-section" style="padding-top: 0px; padding-bottom: 50px;">
+                <div class="works-container" style="padding-top: 50px;">
+                    <div class="works-heading">
+                        <div class="works-title">
+                            <h1 class="wow animate__animated animate__fadeInUp">Full Mouth Dental<span> Implant</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="carousel-wrapper">
+                        <button class="carousel-btn" id="prevBtn2">&lt;</button>
+                        <div class="carousel-viewport" id="carouselViewport2">
+                            <div class="carousel-track" id="carouselTrack2">
+                                <div class="carousel-slide"><img src="./service-images/works/implant/implant1.webp"
+                                        alt="Work 1"></div>
+                                <div class="carousel-slide"><img src="./service-images/works/implant/implant2.webp"
+                                        alt="Work 2"></div>
+                                <div class="carousel-slide"><img src="./service-images/works/implant/implant3.webp"
+                                        alt="Work 3"></div>
+                                <div class="carousel-slide"><img src="./service-images/works/implant/implant4.webp"
+                                        alt="Work 4"></div>
+                                <div class="carousel-slide"><img src="./service-images/works/implant/implant5.webp"
+                                        alt="Work 5"></div>
+                                <div class="carousel-slide"><img src="./service-images/works/implant/implant6.webp"
+                                        alt="Work 6"></div>
+                                <div class="carousel-slide"><img src="./service-images/works/implant/implant7.webp"
+                                        alt="Work 7"></div>
+                                <div class="carousel-slide"><img src="./service-images/works/implant/implant8.webp"
+                                        alt="Work 8"></div>
+
+                            </div>
+                        </div>
+                        <button class="carousel-btn" id="nextBtn2">&gt;</button>
+                    </div>
+                    <div class="carousel-dots" id="carouselDots2"></div>
+                </div>
+            </section>
+
+
+            <!-- New Unique Certificates Section -->
+            <section class="unique-certs-section">
+                <div class="unique-certs-title">
+                    <h1 class="animate-me">Wall <span>of Fame</span></h1>
+                    <p class="wow animate__animated animate__fadeInUp">Advanced credentials and clinical recognitions
+                    </p>
+                </div>
+                <section class="cert-section-main">
+                    <div class="unique-certs-grid">
+
+                        <div class="u-cert-card div1 h-cert">
+                            <img loading="lazy" src="./Achievements/Certificates/cert-1.webp"
+                                alt="Pediatric Dental Care" class="u-cert-img" style="transform: rotate(0deg);">
+                            <div class="u-cert-overlay">
+                                <div class="u-cert-content">
+                                    <h2>Bachelor of Dental Surgery </h2>
+                                    <p>Completed Undergraduate Degree in Dental Surgery</p>
+                                    <p><strong>Dr. M.G.R. University</strong>, Chennai</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-cert-card div2 v-cert">
+                            <img loading="lazy" src="./Achievements/Certificates/cert-2.webp" alt="Practice Management"
+                                class="u-cert-img">
+                            <div class="u-cert-overlay">
+                                <div class="u-cert-content">
+                                    <h2>Master of Surgery in Implant Dentistry</h2>
+                                    <p>Completed a master's degree in dental implant surgery at St. Camillus
+                                        International
+                                        University of Health Sciences</p>
+                                    <p><strong>Rome</strong>, Italy</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="u-cert-card div3 v-cert">
+                            <img loading="lazy" src="./Achievements/Certificates/cert-3.webp"
+                                alt="Bio Mechanical Approach" class="u-cert-img">
+                            <div class="u-cert-overlay">
+                                <div class="u-cert-content">
+                                    <h2>Advanced Implant Training Program</h2>
+                                    <p>Completed an Advanced Implant Competence Training Program</p>
+                                    <p><strong>Malligai Dental Academy</strong>, Chennai</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="u-cert-card div4 h-cert">
+                            <img loading="lazy" src="./Achievements/Certificates/cert-4.webp"
+                                alt="Full Mouth Rehabilitation" class="u-cert-img" style="transform: rotate(0deg);">
+                            <div class="u-cert-overlay">
+                                <div class="u-cert-content">
+                                    <h2>3B-TB Protocal</h2>
+                                    <p>Rehabilitate Atrophic Edentulous Maxilla</p>
+                                    <p><strong>Bioline Advanced Implant Academy</strong>, Bangalore</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="u-cert-card div5 h-cert">
+                            <img loading="lazy" src="./Achievements/Certificates/cert-5.webp"
+                                alt="Dental Laser Certification" class="u-cert-img" style="transform: rotate(0deg);">
+                            <div class="u-cert-overlay">
+                                <div class="u-cert-content">
+                                    <h2>International Meeting</h2>
+                                    <p>Participated in DIO International Meeting</p>
+                                    <p><strong>Busan,</strong> South Korea</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- </div>
+                <div class="unique-certs-grid-l"> -->
+
+                        <div class="u-cert-card div6 v-cert ">
+                            <img loading="lazy" src="./Achievements/Certificates/cert-6.webp"
+                                alt="Microscopic Endodontics" class="u-cert-img" style="transform: rotate(0deg);">
+                            <div class="u-cert-overlay">
+                                <div class="u-cert-content">
+                                    <h2>Excellence in Endodontics</h2>
+                                    <p>Masterclass in advanced Endodontics approaches</p>
+                                    <p><strong>Root Canal Academy</strong>, Coimbatore</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-cert-card div7 v-cert">
+                            <img loading="lazy" src="./Achievements/Certificates/cert-7.webp"
+                                alt="Excellence in Endodontics" class="u-cert-img" style="transform: rotate(0deg);">
+                            <div class="u-cert-overlay">
+                                <div class="u-cert-content">
+                                    <h2>Registration as Dentist</h2>
+                                    <p>Registered Dentist , Tamil Nadu Dental Council</p>
+                                    <p><strong>Priyadharshini Dental College</strong>, Thiruvallur</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="u-cert-card div8 v-cert">
+                            <img loading="lazy" src="./Achievements/Certificates/cert-8.webp"
+                                alt="Aesthetic Dentistry Program" class="u-cert-img" style="transform: rotate(0deg);">
+                            <div class="u-cert-overlay">
+                                <div class="u-cert-content">
+                                    <h2>Clinical Establishment</h2>
+                                    <p>Registration of Clinical Establishment Acquired by Directorate of Medical and
+                                        Rural
+                                        Health Services</p>
+                                    <p><strong>Tuticorin</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="u-cert-card div9 h-cert">
+                            <img loading="lazy" src="./Achievements/Certificates/cert-9.webp"
+                                alt="Clinical Implantology" class="u-cert-img" style="transform: rotate(0deg);">
+                            <div class="u-cert-overlay">
+                                <div class="u-cert-content">
+                                    <h2>Dental Surgeon</h2>
+                                    <p>Registered Dental Practitioner</p>
+                                    <p><strong>Chennai</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="u-cert-card div10 h-cert">
+                            <img loading="lazy" src="./Achievements/Certificates/cert-10.webp"
+                                alt="Orthodontic Masterclass" class="u-cert-img" style="transform: rotate(0deg);">
+                            <div class="u-cert-overlay">
+                                <div class="u-cert-content">
+                                    <h2>Practice Management Masterclass</h2>
+                                    <p>Masterclass in Dental Practice Management</p>
+                                    <p><strong>Acharya Foundation</strong>, Chennai</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Activity Section -->
+            <section class="activity-section">
+                <div class="activity-title">
+                    <h1 class="animate-me">Our <span>Activities</span></h1>
+                    <p class="wow animate__animated animate__fadeInUp">Highlights of events and honour moments
+                    </p>
+                </div>
+                <div class="act-carousel-wrapper">
+                    <div class="act-carousel-track" id="act-track">
+
+                        <div class="act-carousel-item">
+                            <div class="act-img">
+                                <img loading="lazy" src="./Achievements/Activity/Dentist Achiever Award.webp"
+                                    alt="Activity 1" style="object-fit: contain;">
+                            </div>
+                            <div class="act-details">
+                                <h1>Achievements</h1>
+                                <h2>Dentist Achiever Award</h2>
+                                <p>Our doctor was honored with the Dentist Achiever Award at Vijay TV’s Pongal Special
+                                    Debate
+                                    Show held in Kovilpatti, recognizing their dedication, expertise, and outstanding
+                                    contribution to the field of dentistry.</p>
+                            </div>
+                        </div>
+
+                        <div class="act-carousel-item">
+                            <div class="act-img">
+                                <img src="./Achievements/Activity/award1.webp" alt="Activity 2">
+                            </div>
+                            <div class="act-details">
+                                <h1>Achievements</h1>
+                                <h2>Golden Star Icon Award</h2>
+                                <p>Our doctor was honored with the prestigious Golden Star Icon Award by the National
+                                    Integrity
+                                    Cultural Academy, recognizing their exceptional contributions, unwavering
+                                    dedication, and
+                                    commitment to excellence in the field of dentistry and community service.</p>
+                            </div>
+                        </div>
+
+                        <div class="act-carousel-item">
+                            <div class="act-img">
+                                <img src="./Achievements/Activity/award2.webp" alt="Activity 3">
+                            </div>
+                            <div class="act-details">
+                                <h1>Achievements</h1>
+                                <h2>District Honour</h2>
+                                <p>Our doctor was honored by the Thoothukudi District Collector for being the first
+                                    person in
+                                    the district to successfully complete a Master of Implant Dental Surgery from St.
+                                    Camillus
+                                    International University of Health Sciences, marking a remarkable achievement in
+                                    advanced
+                                    dental expertise and bringing pride to the local community.</p>
+                            </div>
+                        </div>
+
+                        <div class="act-carousel-item">
+                            <div class="act-img">
+                                <img src="./Achievements/Activity/award3.webp" alt="Activity 4">
+                            </div>
+                            <div class="act-details">
+                                <h1>Achievements</h1>
+                                <h2>Free Dental Camp</h2>
+                                <p>Our doctor organized and conducted a free dental camp at Dalmia Cement Factory,
+                                    Sattur,
+                                    providing
+                                    comprehensive dental care and awareness for the factory workers, reflecting a strong
+                                    commitment to community health and wellbeing.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="act-carousel-btn prev" id="act-prev">&#10094;</button>
+                    <button class="act-carousel-btn next" id="act-next">&#10095;</button>
+                    <div class="act-carousel-dots" id="act-dots"></div>
+                </div>
+            </section>
+
+
+
+            <!-- team members section  -->
+
+            <section class="team">
+                <div class="t-title" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="400">
+                    <p class="wow animate__animated animate__fadeInUp">OUR TEAM</p>
+                    <h1 class="animate-me"><span>Our Friendly</span> Dentists Team</h1>
+                    <p class="wow animate__animated animate__fadeInUp"><span>A team that cares for you</span></p>
+                </div>
+                <div class="t-containers">
+                    <div class="t-1 wow animate__animated animate__fadeInUp" data-wow-delay=".25s">
+                        <div class="team-img">
+                            <img loading="lazy" src="./Team/doc4.png" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Dr.P.N.Gopinath,BDS.,MDS.,PGCOI,</h2>
+                            <p>Orthodontist</p>
+                        </div>
+                    </div>
+                    <div class="t-1 wow animate__animated animate__fadeInUp" data-wow-delay=".30s">
+                        <div class="team-img">
+                            <img loading="lazy" src="./Team/doc5.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Dr.N.Prithvi Sankar,BDS.,MDS,</h2>
+                            <p>Oral and Maxillofacial Surgeon</p>
+                        </div>
+                    </div>
+                    <div class="t-1 wow animate__animated animate__fadeInUp" data-wow-delay=".35s" id="t3">
+                        <div class="team-img">
+                            <img loading="lazy" src="./Team/doc1.png" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Dr.S.Gobala Krishnan,BDS.,MDS,</h2>
+                            <p>Oral and Maxillofacial Surgeon</p>
+                        </div>
+                    </div>
+                    <div class="t-1 wow animate__animated animate__fadeInUp" data-wow-delay=".40s" id="t4">
+                        <div class="team-img">
+                            <img loading="lazy" src="./Team/doc3.png" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Dr.V.Nagarajan,BDS.,MDS,</h2>
+                            <p>Endodontist & Esthetic Dentist</p>
+                        </div>
+                    </div>
+                    <div class="t-1 wow animate__animated animate__fadeInUp" data-wow-delay=".45s" id="t5">
+                        <div class="team-img">
+                            <img loading="lazy" src="./Team/doc2.png" alt="">
+                        </div>
+                        <div class="name">
+                            <h2>Dr.Divakar Srinivasan,BDS.,MDS,</h2>
+                            <p>Root Canel Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Section -->
+
+            <footer class="footer">
+                <div class="f-parent">
+                    <div class="child-logo">
+                        <img loading="lazy" src="./images/logobg(1).png" alt="">
+                        <p>The goal of our clinic is to provide friendly, caring dentistry and the highest level of general, cosmetic, and specialist dental treatments.</p>
+                        <div class="footer-social-icons">
+                            <a href="https://wa.me/919600762033"><img src="./images-icons/whatsapp (3).png" alt=""></a>
+                            <a
+                                href="https://www.instagram.com/hemsmiledentalcare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                                    src="./images-icons/instagram (2).png" alt=""></a>
+                            <a href="https://www.facebook.com/share/1AfY21VfH6/"><img
+                                    src="./images-icons/facebook (2).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="child-links">
+                        <div class="child-cont">
+                            <div>
+                                <p>Quick Links</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="service.html">Services</a></li>
+                                    <li><a href="contact.html">Book Appointment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="child-cont">
+                            <div>
+                                <p>Others</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="policy.html">Privacy & Policy</a></li>
+                                    <li><a href="terms.html">Terms & Conditions</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="child-cont" id="getin">
+                            <div>
+                                <p>Get in Touch</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="tel:9600762033"><img loading="lazy" src="./images-icons/call.png"
+                                                alt="">+91
+                                            96007 62033</a>
+                                    </li>
+                                    <li><a href="mailto:hemsmiledentalcare@gmail.com"><img loading="lazy"
+                                                src="./images-icons/mail.png" alt="">hemsmiledentalcare@gmail.com</a>
+                                    </li>
+                                    <li><img loading="lazy" src="./images-icons/location.png" alt="">K.E.S. Complex(1st
+                                        Floor),
+                                        Kadalaiyur Main Rd,<br> John Bosco School, Opp., Kovilpatti-628501.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2026 All Rights Reserved.</p>
+                    <a href="https://creativetechfactory.in/home/">
+                        <p>Developed by <span>Creative Tech Factory</span></p>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- POP UP SECTION -->
+    <section class="popup-parent" id="popup-parent-f">
+        <div class="popup popup-box" id="popup">
+            <div class="popup-child2">
+                <img loading="lazy" src="./images-icons/Gemini_Generated_Image_jyhnhhjyhnhhjyhn.png" alt="">
+            </div>
+            <div class="popup-child">
+                <form action="" id="myForm" method="post">
+                    <div class="pop-close">
+                        <h1>Book Your Appointment</h1>
+                        <button onclick="finish()"><img loading="lazy" src="./images-icons/icons8-close-30.png"
+                                width="20px">
+                        </button>
+                    </div>
+                    <div class="input-cont-1">
+                        <p>Your Name</p>
+                        <input type="text" placeholder="Eg:Vasanth" name="name" required>
+                    </div>
+                    <div class="input-cont-1">
+                        <p>Phone no</p>
+                        <input type="tel" placeholder="Eg:98765 43210" name="number" maxlength="10" required>
+                    </div>
+                    <div class="input-cont-1">
+                        <p>Message</p>
+                        <textarea rows="4" placeholder="Eg:Message" name="message"></textarea>
+                    </div>
+                    <div class="input-cont-2">
+                        <p>Appointment date</p>
+                        <input type="date" name="date" required>
+                        <span><img loading="lazy" src="" class="p-icon"></span>
+                    </div>
+                    <div class="pop-button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="cursor2"></div>
+</body>
+
+
+<!-- CDN for GSAP tools -->
+
+<!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<!-- ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- SplitText -->
+<script src="https://assets.codepen.io/16327/SplitText3-beta.min.js"></script>
+
+<!-- popup gsap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Scroll effect wow.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<!-- ScrollSmoother (smooth scroll plugin) -->
+<script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
+
+<script>
+    new WOW().init();
+</script>
+<script>
+    // Smooth scroll start
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+    // create the smooth scroller FIRST!
+    let smoother = ScrollSmoother.create({
+        smooth: 2,
+        effects: true,
+        normalizeScroll: true,
+    });
+    // Smooth scroll ends
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script-about.js"></script>
+
+</html>
