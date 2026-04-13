@@ -1687,17 +1687,8 @@ body {
     font-size: 22px;
   }
 }
-@media screen and (min-width:1280px) {
-  .play{
-    height: 40vh;
-  }
-}
-@media screen and (min-width:1440px) and (max-width:2100px) {
-  .p-title h1{
-    font-size: 44px;
-  }
-  
-}
+
+
 /* 4k screen for blue poster page */
 @media screen and (min-width: 2200px) {
   .p-title {
