@@ -375,15 +375,28 @@ body {
   margin: 0px 20px;
   padding: 80px 0px 0px 50px;
 }
-.title h1 {
+.tagline {
+  font-size: 14px;
+  color: var(--dark-red);
+  border-left: 2px solid var(--dark-red);
+  width: max-content;
+  /* border-radius: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  /* backdrop-filter: blur(100px); */
+  /* background:transparent; */
+}
+.title > h1 {
   font-size: 44px;
   color: var(--dark-red);
   text-align: left;
-  padding-top: 50px;
+  padding-top: 5px;
   padding-bottom: 10px;
   line-height: 1.2;
 }
-.title h1 span {
+.title > h1 span {
   color: var(--orange);
 }
 .title > p {
@@ -992,7 +1005,6 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: 0% 50%;
-
 }
 .a-img .img2 {
   width: 30%;
@@ -1591,7 +1603,7 @@ body {
 .pos1 {
   display: flex;
   flex-direction: column;
-  width:300px;
+  width: 300px;
   padding: 10px;
   color: var(--orange);
 }
@@ -1656,7 +1668,7 @@ body {
     color: var(--white-color);
     z-index: 999;
   }
-  .p-title h1{
+  .p-title h1 {
     font-size: 16px;
   }
   .p-title > P {
@@ -1680,15 +1692,23 @@ body {
   .p-title {
     gap: 30px;
   }
-  .p-title h1{
+  .p-title h1 {
     font-size: 28px;
   }
   .p-title p {
     font-size: 22px;
   }
 }
-
-
+@media screen and (min-width: 1280px) {
+  .play {
+    height: 40vh;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2100px) {
+  .p-title h1 {
+    font-size: 44px;
+  }
+}
 /* 4k screen for blue poster page */
 @media screen and (min-width: 2200px) {
   .p-title {
@@ -1699,7 +1719,7 @@ body {
   .p-title p {
     font-size: 64px;
   }
-  .p-title h1{
+  .p-title h1 {
     font-size: 74px;
   }
   .play {
@@ -3017,7 +3037,7 @@ body {
 .copyright a {
   text-decoration: none;
 }
-.copyright a p span{
+.copyright a p span {
   font-weight: bold;
 }
 .copyright p {
@@ -4256,6 +4276,8 @@ textarea {
   aspect-ratio: 3/2;
   cursor: pointer;
   background-color: #000;
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 
 .v-cert {
@@ -4331,6 +4353,7 @@ textarea {
   gap: 30px;
   max-width: 100%;
   margin: 0 auto;
+  transition: transform 0.3s ease;
 }
 
 .u-cert-card-l {
@@ -4355,7 +4378,7 @@ textarea {
 
 .u-cert-card:hover .u-cert-img,
 .u-cert-card-l:hover .u-cert-img {
-  transform: scale(1.1);
+  transform: scale(1.03);
   opacity: 0.6;
 }
 
@@ -4729,27 +4752,27 @@ textarea {
     font-size: 12px;
   }
 }
-@media  screen and (min-width:1020px) {
-  .about-details > h1{
+@media screen and (min-width: 1020px) {
+  .about-details > h1 {
     font-size: 40px;
   }
-  .about-details p{
+  .about-details p {
     font-size: 20px;
   }
 }
-@media  screen and (min-width:1500px) and (max-width:1900px) {
-  .about-details > h1{
+@media screen and (min-width: 1500px) and (max-width: 1900px) {
+  .about-details > h1 {
     font-size: 64px;
   }
-  .about-details p{
+  .about-details p {
     font-size: 24px;
   }
 }
-@media  screen and (min-width:1901px) and (max-width:2199px) {
-  .about-details > h1{
+@media screen and (min-width: 1901px) and (max-width: 2199px) {
+  .about-details > h1 {
     font-size: 72px;
   }
-  .about-details p{
+  .about-details p {
     font-size: 32px;
   }
 }
@@ -4805,8 +4828,8 @@ textarea {
   justify-content: center;
   align-items: start;
   position: fixed;
-  top:50px;
-  z-index:10;
+  top: 50px;
+  z-index: 10;
 }
 .popup {
   display: flex;
@@ -4947,7 +4970,7 @@ textarea {
 }
 .my-popup {
   border-radius: 20px;
-  background-color:#FAF5D8;
+  background-color: #faf5d8;
 }
 
 .my-title {
@@ -5090,20 +5113,20 @@ textarea {
   position: fixed;
   right: -145px;
   top: 320px;
-  background-color: #4285f4;
+  background-color: var(--orange);
 }
 .whatsapp:hover {
-  box-shadow: 0 0 15px #25d366;
+  box-shadow: 0 0 10px #25d366;
   transform: translateX(-135px);
 }
 
 .mail:hover {
-  box-shadow: 0 0 15px #ea4335;
+  box-shadow: 0 0 10px #ea4335;
   transform: translateX(-100px);
 }
 
 .phone:hover {
-  box-shadow: 0 0 15px #4285f4;
+  box-shadow: 0 0 10px var(--orange);
   transform: translateX(-90px);
 }
 /* #overlay {
